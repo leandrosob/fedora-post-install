@@ -61,6 +61,10 @@ snap install ${package_snap[@]}
 
 ### --- to do
 
+# Disable the Nouveau Driver
+# echo "options nouveau modeset=0" >> /usr/lib/modprobe.d/blacklist-nouveau.conf
+# sudo dracut --force 
+
 # Downloads
 # downloads=( )
 # wget -nv -c ${downloads[@]}
